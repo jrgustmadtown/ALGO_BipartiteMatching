@@ -65,4 +65,4 @@ for _ in range(t):
         capacity[(u, v)] = 1
 
     sol = ford_fulkerson(s, sink, adj, capacity)
-    print(str(sol) + " " + ("Y" if sol == m else "N"))
+    print(str(sol) + " " + ("Y" if sol == max(m,n) else "N"))
