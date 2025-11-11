@@ -4,7 +4,6 @@ inputy = list(map(int, sys.stdin.buffer.read().split()))
 t = inputy[0]
 idx = 1
 
-
 def dfs(u, t, flow, adj, capacity, flow_map, visited):
     if u == t:
         return flow
@@ -57,7 +56,7 @@ for _ in range(t):
         adj[sink].append(bj)
         capacity[(bj, sink)] = 1
 
-    # (A→B)
+    # a to b
     for _ in range(q):
         u = inputy[idx]; v = inputy[idx + 1]; idx += 2
         v += offset  # shift B nodes
